@@ -9,7 +9,7 @@
 # Import modules for script
 import time
 import praw
-from apiclient.discovery import build
+from googleapiclient.discovery import build
 import datetime
 import html
 
