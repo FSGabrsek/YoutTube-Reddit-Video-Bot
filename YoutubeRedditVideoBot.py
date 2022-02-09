@@ -1,10 +1,9 @@
-'''
-ThatMadCat video bot v1.0
-by Frank Gabršek|u/FrankieManta|The Frenkenator
-made for r/ThatMadCat
 
-Partially based on Youtube_Poster v2.0 by /u/EDGYALLCAPSUSERNAME
-'''
+# Reddit video bot v1.0
+# by Frank Gabršek|u/FrankieManta|The Frenkenator
+#
+# Partially based on Youtube_Poster v2.0 by /u/EDGYALLCAPSUSERNAME
+
 
 
 # Import modules for script
@@ -18,13 +17,13 @@ print('import finished...')
 
 
 # YouTube Data API credentials
-DEVELOPER_KEY = 'DEVELOPER_KEY'
+DEVELOPER_KEY = ''
 YOUTUBE_API_SERVICE_NAME = 'youtube'
 YOUTUBE_API_VERSION = 'v3'
 
 # Post variables
-CHANNEL_ID = 'CHANNEL_ID'
-DESIRED_FLAIR_TEXT = 'FLAIR_TEXT'
+CHANNEL_ID = ''
+DESIRED_FLAIR_TEXT = 'Official'
 print('variables finished...')
 
 
@@ -61,11 +60,11 @@ def youtube_search(channel_ID):
 def submit_post(data_entries):
   did_submit = False
 
-  r = praw.Reddit(client_id='CLIENT_ID',
-                  client_secret='CLIENT_SECRET',
-                  user_agent='USER_AGENT',
-                  username='USERNAME',
-                  password='PASSWORD')
+  r = praw.Reddit(client_id='',
+                  client_secret='',
+                  user_agent='',
+                  username='',
+                  password='')
 
   title = html.unescape(data_entries[0])
   link = 'https://www.youtube.com/watch?v={}'.format(data_entries[1])
